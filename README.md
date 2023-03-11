@@ -15,6 +15,7 @@ pip install hex-json
 
 ### Convert and restore dict
 ```python
+from hex_json import hex_serialize, hex_deserialize
 d = {"hello": "world"}
 hex_s = hex_serialize(d)
 print(hex_s) # 0x10b9af5bde033362715ac3e14a8e3a374e572b9923e4d
@@ -26,6 +27,7 @@ print(type(d)) # <class 'str'>
 
 ### Convert and restore ASCII JSON string
 ```python
+from hex_json import hex_serialize, hex_deserialize
 d = '{"hello": "world"}'
 hex_s = hex_serialize(d)
 print(hex_s) # 0x389e07d8b54506b764401133595ffdc3b1729818953c64e47bc3ddbac98cea
