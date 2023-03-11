@@ -1,4 +1,3 @@
-import os
 import uuid
 from hex_json import hex_serialize, hex_deserialize
 

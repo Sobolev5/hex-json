@@ -19,7 +19,7 @@ from hex_json import hex_serialize, hex_deserialize
 
 d = {"hello": "world"}
 hex_s = hex_serialize(d)
-print(hex_s) # 0x10b9af5bde033362715ac3e14a8e3a374e572b9923e4d
+print(hex_s) # 7b2268656c6c6f223a22776f726c64227d
 
 d = hex_deserialize(hex_s)
 print(d) # {'hello': 'world'}
@@ -30,13 +30,13 @@ print(type(d)) # <class 'str'>
 ```python
 from hex_json import hex_serialize, hex_deserialize
 
-d = '{"hello": "world"}'
-hex_s = hex_serialize(d)
-print(hex_s) # 0x389e07d8b54506b764401133595ffdc3b1729818953c64e47bc3ddbac98cea
+s = '{"hello": "world"}'
+hex_s = hex_serialize(s)
+print(hex_s) # 227b5c2268656c6c6f5c223a205c22776f726c645c227d22
 
-d = hex_deserialize(hex_s)
-print(d) # {"hello": "world"}
-print(type(d)) # <class 'str'>
+s = hex_deserialize(hex_s)
+print(s) # {"hello": "world"}
+print(type(s)) # <class 'str'>
 ```
 
 ### Tests
