@@ -10,7 +10,7 @@ def hex_serialize(payload: Any, *args, **kwargs) -> str:
     >>> 7b2268656c6c6f223a22776f726c64227d
     """
     
-    assert bool(payload), "Empty payload]"
+    assert bool(payload), "Empty payload"
 
     bytes_s = orjson.dumps(payload)
     return bytes_s.hex()
